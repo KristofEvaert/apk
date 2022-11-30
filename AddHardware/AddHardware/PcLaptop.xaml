@@ -1,0 +1,31 @@
+﻿<Window x:Class="AddHardware.PcLaptop"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AddHardware"
+        mc:Ignorable="d"
+        Title="PcLaptop" Height="650" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Vertical">
+            <Label HorizontalAlignment="Center" Margin="0 20" FontSize="40">Kies je locatie</Label>
+            <ComboBox  x:Name="LocatieCombobox" FontSize="17" Margin="25"  HorizontalAlignment="Center" Width="250"/>
+
+            <Button ToolTip="Niet actief als je geen locatie hebt gekozen" FontSize="25"  x:Name="VoegToe" Margin="10 25" Click="VoegToe_Click" Content="pc/laptop naar database sturen">
+            </Button>
+            <Button  x:Name="SluitAf" Margin="10 25" Click="SluitAf_Click" Grid.ColumnSpan="2" FontSize="25" Content="sluit  programma">
+           
+        </Button>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Margin="25 75" Grid.Column="1">
+            <TextBlock Margin="10 25" FontSize="24">VolgNummer pc of laptop</TextBlock>
+            <TextBlock Margin="25" FontSize="35" x:Name="OutputVolgnummer"></TextBlock>
+            <TextBlock Margin="10 25" FontSize="24">Program Ouput</TextBlock>
+            <TextBlock Margin="25" FontSize="24" x:Name="OutputErrorMessage" TextWrapping="Wrap"></TextBlock>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,24 @@
+﻿<Window x:Class="AddHardware.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AddHardware"
+     
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Image Source="Images/ApkLogo.png"></Image>
+        <StackPanel Grid.Column="1" Orientation="Vertical" Margin="20">
+            <Button Content="Voeg Pc of Laptop Toe" Margin="10 25" FontSize="24" x:Name="PcLaptop" Click="PcLaptop_Click"></Button>
+            <Button Content="Voeg Scherm Toe" Margin="10 25" FontSize="24" x:Name="Scherm" Click="Scherm_Click"></Button>
+
+           
+        </StackPanel> 
+        
+    </Grid>
+</Window>
